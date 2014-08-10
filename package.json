@@ -1,0 +1,25 @@
+{
+	"name": "metalsmith-html-minifier",
+	"dependencies": {
+		"html-minifier": "^0.6.5"
+	},
+	"version": "0.0.0",
+	"description": "A Metalsmith plugin to compress/minify HTML files.",
+	"main": "./libs/index.js",
+	"directories": {
+		"test": "test"
+	},
+	"scripts": {
+		"test": "./test/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/whymarrh/metalsmith-html-minifier.git"
+	},
+	"author": "Whymarrh Whitby",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/whymarrh/metalsmith-html-minifier/issues"
+	},
+	"homepage": "https://github.com/whymarrh/metalsmith-html-minifier"
+}
