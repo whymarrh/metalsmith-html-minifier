@@ -3,6 +3,9 @@
 	"dependencies": {
 		"html-minifier": "^0.6.5"
 	},
+	"devDependencies": {
+		"jest-cli": "^0.1.18"
+	},
 	"version": "0.0.0",
 	"description": "A Metalsmith plugin to compress/minify HTML files.",
 	"main": "./lib/index.js",
@@ -10,7 +13,7 @@
 		"test": "test"
 	},
 	"scripts": {
-		"test": "./test/index.js"
+		"test": "jest"
 	},
 	"repository": {
 		"type": "git",
