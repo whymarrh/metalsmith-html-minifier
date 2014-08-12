@@ -29,7 +29,7 @@ Metalsmith(__dirname)
     .build()
 ```
 
-The above will minify all the HTMl files (files ending in `.html`) it processes. To pass options to the minifier (to enable or disable optimizations):
+The above will minify all the HTML files (files ending in `.html`) it processes. To pass options to the minifier (to enable or disable optimizations):
 
 ```js
 var Metalsmith   = require("metalsmith");
