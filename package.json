@@ -6,7 +6,7 @@
 	"devDependencies": {
 		"jest-cli": "^0.1.18"
 	},
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "A Metalsmith plugin to minify HTML files.",
 	"main": "./lib/index.js",
 	"directories": {
