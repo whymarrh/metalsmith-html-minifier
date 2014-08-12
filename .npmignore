@@ -1,0 +1,7 @@
+.gitignore
+npm-debug.log
+__mocks__
+__tests__
+
+# Don't ignore .npmignore files
+!.npmignore
