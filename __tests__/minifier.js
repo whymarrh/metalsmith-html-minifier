@@ -15,10 +15,11 @@ describe("metalsmith-html-minifier", function() {
 
 	it("should call minify with each HTML files' contents", function () {
 		var htmlMinifier = require(module);
-		var plugin = htmlMinifier({
+		var options = {
 			"foo": "bar",
 			"baz": "qux",
-		});
+		};
+		var plugin = htmlMinifier(options);
 		var files = {
 			"foo.html": {
 				"contents": "a",
@@ -39,7 +40,31 @@ describe("metalsmith-html-minifier", function() {
 
 		var minify = require("html-minifier").minify;
 		expect(minify.mock.calls.length).toBe(2);
-		expect(minify).toBeCalledWith("a", jasmine.any(Object));
-		expect(minify).toBeCalledWith("b", jasmine.any(Object));
+		expect(minify).toBeCalledWith("a", options);
+		expect(minify).toBeCalledWith("b", options);
+	});
+
+	it("should call minify with default options when no options given", function () {
+		jest.dontMock("../lib/defaults");
+		var htmlMinifier = require(module);
+		var plugin = htmlMinifier();
+
+		plugin({
+			"foo.html": {
+				"contents": "a",
+			}
+		}, {
+			// This isn't important
+		}, function () {
+			// This isn't important
+		});
+
+		var minify = require("html-minifier").minify;
+		expect(minify.mock.calls.length).toBe(1);
+
+		var defaultOptions = minify.mock.calls[0][1];
+		expect(defaultOptions).toBeDefined();
+		expect(defaultOptions).toEqual(jasmine.any(Object));
+		expect(defaultOptions).not.toEqual({});
 	});
 });
