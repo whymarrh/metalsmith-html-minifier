@@ -59,3 +59,8 @@ The following options are enabled by default. **To disable any of these you will
 | `removeRedundantAttributes`    | [Remove attributes when value matches default](http://perfectionkills.com/experimenting-with-html-minifier/#remove_redundant_attributes)
 
   [2]:https://github.com/kangax/html-minifier/blob/b96247c0001be769e6c80541f57ed9cac9798d77/README.md#options-quick-reference
+
+License
+-------
+
+This software is released under the MIT License. See [LICENSE.md][LICENSE.md] for more information.
