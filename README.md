@@ -63,4 +63,4 @@ The following options are enabled by default. **To disable any of these you will
 License
 -------
 
-This software is released under the MIT License. See [LICENSE.md][LICENSE.md] for more information.
+This software is released under the MIT License. See [LICENSE.md](LICENSE.md) for more information.
