@@ -12,7 +12,7 @@ Installation
 
 The usual:
 
-```bash
+```
 $ npm install --save metalsmith-html-minifier
 ```
 
