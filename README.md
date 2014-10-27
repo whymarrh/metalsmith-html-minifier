@@ -60,6 +60,15 @@ The following options are enabled by default. **To disable any of these you will
 
   [2]:https://github.com/kangax/html-minifier/blob/b96247c0001be769e6c80541f57ed9cac9798d77/README.md#options-quick-reference
 
+Tests
+-----
+
+To run the tests:
+
+```
+$ npm test
+```
+
 License
 -------
 
