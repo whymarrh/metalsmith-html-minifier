@@ -34,6 +34,21 @@ describe("defaults", function() {
 		});
 	});
 
+	it("merges boolean values", function () {
+		var defaults = require("../lib/defaults");
+		expect(defaults({
+			"a": false,
+			"b": false,
+		}, {
+			"b": true,
+			"d": true,
+		})).toEqual({
+			"a": false,
+			"b": false,
+			"d": true,
+		});
+	});
+
 	it("merges nothing when defaults is empty", function () {
 		var defaults = require("../lib/defaults");
 		var obj = {
