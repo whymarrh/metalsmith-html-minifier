@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.0.2 - 2014-11-01
+
+### Added
+- Nothing
+
+### Deprecated
+- Nothing
+
+### Removed
+- Nothing
+
+### Fixed
+- Issue where defaults could not be overriden correctly (#2)
+
 ## 1.0.1 - 2014-10-06
 
 ### Added
