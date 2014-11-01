@@ -14,7 +14,7 @@ All notable changes to this project will be documented in this file.
 - Nothing
 
 ### Fixed
-- Issue where defaults could not be overriden correctly (#2)
+- Issue where defaults could not be overriden correctly ([#2](https://github.com/whymarrh/metalsmith-html-minifier/pull/2))
 
 ## 1.0.1 - 2014-10-06
 
