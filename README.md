@@ -26,7 +26,7 @@ var Metalsmith   = require("metalsmith");
 var htmlMinifier = require("metalsmith-html-minifier");
 Metalsmith(__dirname)
     .use(htmlMinifier()) // Use the default options
-    .build()
+    .build();
 ```
 
 The above will minify all the HTML files (files ending in `.html`) it processes. To pass options to the minifier (to enable or disable optimizations):
@@ -39,7 +39,7 @@ Metalsmith(__dirname)
         removeComments: false,
         // etc.
     }))
-    .build()
+    .build();
 ```
 
 Options
