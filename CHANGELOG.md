@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.1.0 - 2014-12-17
+
+### Added
+- Nothing
+
+### Deprecated
+- Nothing
+
+### Removed
+- Nothing
+
+### Fixed
+- Minification errors were not passed along to the `done` callback
+
 ## 1.0.2 - 2014-11-01
 
 ### Added
