@@ -1,6 +1,8 @@
 Metalsmith HTML Minifier
 ========================
 
+[![npm](https://img.shields.io/npm/v/metalsmith-html-minifier.svg)](https://www.npmjs.com/package/metalsmith-html-minifier)
+
 A Metalsmith plug-in to minify HTML files using [kangax/html-minifier][1].
 
 Be aware that certain optimizations are enabled by default in this plug-in, some of which may not be what you want. Please read the documentation to ensure you understand what is happening to your markup and disable options as required.
