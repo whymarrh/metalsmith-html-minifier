@@ -3,7 +3,7 @@
 var module = "../lib/index";
 jest.dontMock(module);
 
-describe("metalsmith-html-minifier", function() {
+describe("metalsmith-html-minifier", function () {
 	it("should be a function", function () {
 		expect(require(module)).toEqual(jasmine.any(Function));
 	});

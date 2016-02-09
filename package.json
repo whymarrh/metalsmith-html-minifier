@@ -8,6 +8,7 @@
     "babel-jest": "^6.0.1",
     "babel-preset-es2015": "^6.5.0",
     "jest-cli": "^0.8.2",
+    "jscs": "^2.9.0",
     "lodash.defaultsdeep": "^4.1.0"
   },
   "peerDependencies": {
@@ -20,7 +21,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest && jscs lib __tests__ __mocks__"
   },
   "jest": {
     "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
