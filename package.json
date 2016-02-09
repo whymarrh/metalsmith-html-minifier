@@ -4,7 +4,8 @@
     "html-minifier": "^1.0.0"
   },
   "devDependencies": {
-    "jest-cli": "^0.8.2"
+    "jest-cli": "^0.8.2",
+    "lodash.defaultsdeep": "^4.1.0"
   },
   "peerDependencies": {
     "metalsmith": "^2.0.0"

@@ -45,7 +45,6 @@ describe("metalsmith-html-minifier", function() {
 	});
 
 	it("should call minify with default options when no options given", function () {
-		jest.dontMock("../lib/defaults");
 		var htmlMinifier = require(module);
 		var plugin = htmlMinifier();
 
