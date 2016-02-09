@@ -1,13 +1,13 @@
 {
 	"name": "metalsmith-html-minifier",
 	"dependencies": {
-		"html-minifier": "^0.6.5"
+		"html-minifier": "^1.0.0"
 	},
 	"devDependencies": {
-		"jest-cli": "^0.1.18"
+		"jest-cli": "^0.8.2"
 	},
 	"peerDependencies": {
-		"metalsmith": ">= 0.9.0"
+		"metalsmith": "^2.0.0"
 	},
 	"version": "1.1.0",
 	"description": "A Metalsmith plugin to minify HTML files.",
