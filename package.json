@@ -1,7 +1,8 @@
 {
   "name": "metalsmith-html-minifier",
   "dependencies": {
-    "html-minifier": "^1.0.0"
+    "html-minifier": "^1.0.0",
+    "minimatch": "^3.0.0"
   },
   "devDependencies": {
     "jest-cli": "^0.8.2",

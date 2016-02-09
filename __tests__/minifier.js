@@ -19,7 +19,7 @@ describe("metalsmith-html-minifier", function() {
 			"foo": "bar",
 			"baz": "qux",
 		};
-		var plugin = htmlMinifier(options);
+		var plugin = htmlMinifier(undefined, options);
 		var files = {
 			"foo.html": {
 				"contents": "a",

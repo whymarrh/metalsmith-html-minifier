@@ -31,13 +31,23 @@ Metalsmith(__dirname)
     .build();
 ```
 
-The above will minify all the HTML files (files ending in `.html`) it processes. To pass options to the minifier (to enable or disable optimizations):
+The above will minify all the HTML files (files ending in `.html`) it processes. To provide a custom glob for files to minify:
+
+```
+var Metalsmith   = require("metalsmith");
+var htmlMinifier = require("metalsmith-html-minifier");
+Metalsmith(__dirname)
+    .use(htmlMinifier("*.html"))
+    .build();
+```
+
+To pass options to the minifier (to enable or disable optimizations):
 
 ```js
 var Metalsmith   = require("metalsmith");
 var htmlMinifier = require("metalsmith-html-minifier");
 Metalsmith(__dirname)
-    .use(htmlMinifier({
+    .use(htmlMinifier("*.html", {
         removeComments: false,
         // etc.
     }))
