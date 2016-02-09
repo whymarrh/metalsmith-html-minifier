@@ -1,31 +1,31 @@
 {
-	"name": "metalsmith-html-minifier",
-	"dependencies": {
-		"html-minifier": "^1.0.0"
-	},
-	"devDependencies": {
-		"jest-cli": "^0.8.2"
-	},
-	"peerDependencies": {
-		"metalsmith": "^2.0.0"
-	},
-	"version": "1.1.0",
-	"description": "A Metalsmith plugin to minify HTML files.",
-	"main": "./lib/index.js",
-	"directories": {
-		"test": "test"
-	},
-	"scripts": {
-		"test": "jest"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/whymarrh/metalsmith-html-minifier.git"
-	},
-	"author": "Whymarrh Whitby",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/whymarrh/metalsmith-html-minifier/issues"
-	},
-	"homepage": "https://github.com/whymarrh/metalsmith-html-minifier"
+  "name": "metalsmith-html-minifier",
+  "dependencies": {
+    "html-minifier": "^1.0.0"
+  },
+  "devDependencies": {
+    "jest-cli": "^0.8.2"
+  },
+  "peerDependencies": {
+    "metalsmith": "^2.0.0"
+  },
+  "version": "1.1.0",
+  "description": "A Metalsmith plugin to minify HTML files.",
+  "main": "./lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/whymarrh/metalsmith-html-minifier.git"
+  },
+  "author": "Whymarrh Whitby",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/whymarrh/metalsmith-html-minifier/issues"
+  },
+  "homepage": "https://github.com/whymarrh/metalsmith-html-minifier"
 }
