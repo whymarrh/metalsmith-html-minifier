@@ -70,7 +70,7 @@ The following options are enabled by default. **To disable any of these you will
 | `removeEmptyAttributes`        | [Remove all attributes with whitespace-only values](http://perfectionkills.com/experimenting-with-html-minifier/#remove_empty_or_blank_attributes)
 | `removeRedundantAttributes`    | [Remove attributes when value matches default](http://perfectionkills.com/experimenting-with-html-minifier/#remove_redundant_attributes)
 
-  [2]:https://github.com/kangax/html-minifier/blob/b96247c0001be769e6c80541f57ed9cac9798d77/README.md#options-quick-reference
+  [2]:https://github.com/kangax/html-minifier/tree/v1.0.0#options-quick-reference
 
 Tests
 -----
