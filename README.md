@@ -33,7 +33,7 @@ Metalsmith(__dirname)
 
 The above will minify all the HTML files (files ending in `.html`) it processes. To provide a custom glob for files to minify:
 
-```
+```js
 var Metalsmith   = require("metalsmith");
 var htmlMinifier = require("metalsmith-html-minifier");
 Metalsmith(__dirname)
