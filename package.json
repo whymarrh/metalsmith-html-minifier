@@ -22,7 +22,7 @@
     "test": "test"
   },
   "scripts": {
-    "build": "mkdir -p build && cp *.json build && babel lib > build/index.js",
+    "build": "mkdir -p build && cp *.json *.md .npmignore build && babel lib > build/index.js",
     "test": "jest && jscs lib __tests__ __mocks__"
   },
   "jest": {
