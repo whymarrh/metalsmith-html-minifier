@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2.0.0 - 2016-02-12
+
+### Changed
+- The plugin now accepts two arguments, a file glob pattern and the html-minifier options, respectively.
+
 ## 1.1.0 - 2014-12-17
 
 ### Added

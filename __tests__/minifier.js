@@ -3,7 +3,7 @@
 var module = "../lib/index";
 jest.dontMock(module);
 
-describe("metalsmith-html-minifier", function() {
+describe("metalsmith-html-minifier", function () {
 	it("should be a function", function () {
 		expect(require(module)).toEqual(jasmine.any(Function));
 	});
@@ -19,7 +19,7 @@ describe("metalsmith-html-minifier", function() {
 			"foo": "bar",
 			"baz": "qux",
 		};
-		var plugin = htmlMinifier(options);
+		var plugin = htmlMinifier(undefined, options);
 		var files = {
 			"foo.html": {
 				"contents": "a",
@@ -45,7 +45,6 @@ describe("metalsmith-html-minifier", function() {
 	});
 
 	it("should call minify with default options when no options given", function () {
-		jest.dontMock("../lib/defaults");
 		var htmlMinifier = require(module);
 		var plugin = htmlMinifier();
 

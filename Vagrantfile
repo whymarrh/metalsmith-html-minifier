@@ -12,6 +12,7 @@ Vagrant.configure(2) do |config|
         sudo apt-get -y dist-upgrade
         sudo apt-get -y install \
             htop nodejs tree
+        sudo npm install npm@latest -g
         if [[ ! -d .files ]]
         then
             git clone git://github.com/whymarrh/dotfiles .files
