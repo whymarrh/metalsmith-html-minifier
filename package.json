@@ -23,6 +23,7 @@
   },
   "scripts": {
     "build": "mkdir -p build && cp *.json *.md .npmignore build && babel lib > build/index.js",
+    "release": "npm run build && cd build && npm publish",
     "test": "jest && jscs lib __tests__ __mocks__"
   },
   "jest": {
