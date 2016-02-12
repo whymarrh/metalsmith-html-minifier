@@ -5,6 +5,7 @@
     "minimatch": "^3.0.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.5.1",
     "babel-jest": "^6.0.1",
     "babel-preset-es2015": "^6.5.0",
     "jest-cli": "^0.8.2",
@@ -16,11 +17,12 @@
   },
   "version": "1.1.0",
   "description": "A Metalsmith plugin to minify HTML files.",
-  "main": "./lib/index.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
+    "build": "mkdir -p build && cp *.json build && babel lib > build/index.js",
     "test": "jest && jscs lib __tests__ __mocks__"
   },
   "jest": {
