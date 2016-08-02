@@ -66,4 +66,25 @@ describe("metalsmith-html-minifier", function () {
 		expect(defaultOptions).toEqual(jasmine.any(Object));
 		expect(defaultOptions).not.toEqual({});
 	});
+
+	it("should call minify with options as first argument", function () {
+		var htmlMinifier = require(module);
+		var options = {
+			"foo": "bar"
+		};
+		var plugin = htmlMinifier(options);
+
+		plugin({
+			"foo.html": {
+				"contents": "a",
+			}
+		}, {
+			// This isn't important
+		}, function () {
+			// This isn't important
+		});
+
+		var minify = require("html-minifier").minify;
+		expect(minify).toBeCalledWith("a", options);
+	});
 });
