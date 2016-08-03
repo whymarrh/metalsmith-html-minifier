@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
-- The plugin now accepts a single object as its only argument to support using the Metalsmith CLI (#13)
+- The plugin now accepts a single object as its only argument to support using the Metalsmith CLI ([#13](https://github.com/whymarrh/metalsmith-html-minifier/pull/13))
 
 ## 2.0.0 - 2016-02-12
 
