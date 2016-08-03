@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2.1.0 - 2016-08-03
+
+### Added
+
+- The plugin now accepts a single object as its only argument to support using the Metalsmith CLI (#13)
+
 ## 2.0.0 - 2016-02-12
 
 ### Changed
