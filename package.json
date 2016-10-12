@@ -1,7 +1,7 @@
 {
   "name": "metalsmith-html-minifier",
   "dependencies": {
-    "html-minifier": "^1.0.0",
+    "html-minifier": "^3.0.0",
     "lodash.defaultsdeep": "^4.1.0",
     "minimatch": "^3.0.0"
   },
