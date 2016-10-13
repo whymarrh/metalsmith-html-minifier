@@ -27,13 +27,10 @@
     "test": "jest && jscs lib __tests__ __mocks__"
   },
   "jest": {
+    "automock": true,
     "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
-    "testFileExtensions": [
-      "js"
-    ],
-    "moduleFileExtensions": [
-      "js"
-    ]
+    "resetModules": true,
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(js)$"
   },
   "repository": {
     "type": "git",
