@@ -28,7 +28,9 @@
   },
   "jest": {
     "automock": true,
-    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "transform": {
+      ".*": "<rootDir>/node_modules/babel-jest"
+    },
     "resetModules": true,
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(js)$"
   },
