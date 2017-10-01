@@ -1,5 +1,5 @@
 "use strict";
 
 jest.autoMockOff();
-module.exports = require.requireActual("micromatch");
+module.exports = require.requireActual("minimatch");
 jest.autoMockOn();
