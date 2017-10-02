@@ -10,3 +10,11 @@ matrix:
 
 notifications:
     email: false
+deploy:
+  provider: npm
+  email:
+    secure: ZCdEsxE0k4o214gOY16BMluYInnz+6xxzR7WRqHLSKnfpzFc1LrombhZn2RdwrYjNJogmytNi0OfoWLRak3r/Ftez1N16xbBVpNlF/+Zgpi/X+bjkF+dgV9aw+QK88h3taJlhzRjBzyKAakPIs0fNeZUViLztaUC0QPs3OnbBog=
+  api_key:
+    secure: S3Vp9cgCudA6FcwFUKRHjZzTVP3zhDDaNkCmgS+mB3rbSQfTLZ71swxcox8l7kzI7bY4cDJCO7e46mqMMvrXq3Cnj5utgjYEm5bS4hgGyq0aq3XsJe+Y7ki1itT91VAOvAtw3OA/+Wb37H3NYtQSIH2M0/U284SWd9tTNGJw+9c=
+  on:
+    tags: true
