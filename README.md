@@ -41,6 +41,16 @@ Metalsmith(__dirname)
     .build();
 ```
 
+You can also pass an array of globs to match filenames:
+
+```js
+var Metalsmith   = require("metalsmith");
+var htmlMinifier = require("metalsmith-html-minifier");
+Metalsmith(__dirname)
+    .use(htmlMinifier(["*.html", "*.xhtml"]))
+    .build();
+```
+
 To pass options to the minifier (to enable or disable optimizations):
 
 ```js
