@@ -12,7 +12,7 @@
     "jest-cli": "^18.0.0",
     "jscs": "^3.0.0"
   },
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "A Metalsmith plugin to minify HTML files.",
   "main": "index.js",
   "directories": {
