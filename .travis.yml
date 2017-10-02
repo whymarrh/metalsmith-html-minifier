@@ -10,6 +10,9 @@ matrix:
 
 notifications:
     email: false
+before_deploy:
+    - npm run build
+    - cd build
 deploy:
   provider: npm
   email:
