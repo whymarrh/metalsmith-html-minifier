@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2.2.0 - 2016-10-12
+
+### Changed
+
+- Updated JSCS to v3
+- Updated HTML Minifier to v3
+
 ## 2.1.0 - 2016-08-03
 
 ### Added
