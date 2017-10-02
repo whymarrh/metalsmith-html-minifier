@@ -44,6 +44,37 @@ describe("metalsmith-html-minifier", function () {
 		expect(minify).toBeCalledWith("b", options);
 	});
 
+	it("should call minify with each HTML and XHTML files' contents (two extensions)", function () {
+		var htmlMinifier = require(module);
+		var options = {
+			"foo": "bar",
+			"baz": "qux",
+		};
+		var plugin = htmlMinifier(["*.html", "*.xhtml"], options);
+		var files = {
+			"foo.html": {
+				"contents": "a",
+			},
+			"bar.xhtml": {
+				"contents": "b",
+			},
+			"baz.scss": {
+				"contents": "c",
+			}
+		};
+
+		plugin(files, {
+			// This isn't important
+		}, function () {
+			// This isn't important
+		});
+
+		var minify = require("html-minifier").minify;
+		expect(minify.mock.calls.length).toBe(2);
+		expect(minify).toBeCalledWith("a", options);
+		expect(minify).toBeCalledWith("b", options);
+	});
+
 	it("should call minify with default options when no options given", function () {
 		var htmlMinifier = require(module);
 		var plugin = htmlMinifier();
