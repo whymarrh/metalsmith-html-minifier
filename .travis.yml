@@ -15,6 +15,7 @@ before_deploy:
     - cd build
 deploy:
   provider: npm
+  skip_cleanup: true
   email:
     secure: ZCdEsxE0k4o214gOY16BMluYInnz+6xxzR7WRqHLSKnfpzFc1LrombhZn2RdwrYjNJogmytNi0OfoWLRak3r/Ftez1N16xbBVpNlF/+Zgpi/X+bjkF+dgV9aw+QK88h3taJlhzRjBzyKAakPIs0fNeZUViLztaUC0QPs3OnbBog=
   api_key:
