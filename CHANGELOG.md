@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2.3.0 - 2017-10-02
+
+### Added
+
+- An array of patterns (globs) can now be passed as the first argument (#22)
+
+### Changed
+
+- Replaced minimatch with multimatch (#22)
+
 ## 2.2.0 - 2016-10-12
 
 ### Changed
