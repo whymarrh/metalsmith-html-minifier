@@ -118,4 +118,35 @@ describe("metalsmith-html-minifier", function () {
 		var minify = require("html-minifier").minify;
 		expect(minify).toBeCalledWith("a", options);
 	});
+
+	it("should call minify with each HTML files' contents matching the base name", function () {
+		var htmlMinifier = require(module);
+		var options = {
+			"foo": "bar",
+			"baz": "qux",
+		};
+		var plugin = htmlMinifier(undefined, options);
+		var files = {
+			"some/dir/that/exists/foo.html": {
+				"contents": "a",
+			},
+			"some/dir/that has spaces/bar.html": {
+				"contents": "b",
+			},
+			"html/in/the/path.html/baz.scss": {
+				"contents": "c",
+			}
+		};
+
+		plugin(files, {
+			// This isn't important
+		}, function () {
+			// This isn't important
+		});
+
+		var minify = require("html-minifier").minify;
+		expect(minify.mock.calls.length).toBe(2);
+		expect(minify).toBeCalledWith("a", options);
+		expect(minify).toBeCalledWith("b", options);
+	});
 });
