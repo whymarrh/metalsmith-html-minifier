@@ -31,12 +31,12 @@ describe("metalsmith-html-minifier", function () {
 				"contents": "c",
 			}
 		};
+		var done = jest.fn();
 
 		plugin(files, {
 			// This isn't important
-		}, function () {
-			// This isn't important
-		});
+		}, done);
+		expect(done).not.toBeCalledWith(expect.anything());
 
 		var minify = require("html-minifier").minify;
 		expect(minify.mock.calls.length).toBe(2);
@@ -62,12 +62,12 @@ describe("metalsmith-html-minifier", function () {
 				"contents": "c",
 			}
 		};
+		var done = jest.fn();
 
 		plugin(files, {
 			// This isn't important
-		}, function () {
-			// This isn't important
-		});
+		}, done);
+		expect(done).not.toBeCalledWith(expect.anything());
 
 		var minify = require("html-minifier").minify;
 		expect(minify.mock.calls.length).toBe(2);
@@ -78,6 +78,7 @@ describe("metalsmith-html-minifier", function () {
 	it("should call minify with default options when no options given", function () {
 		var htmlMinifier = require(module);
 		var plugin = htmlMinifier();
+		var done = jest.fn();
 
 		plugin({
 			"foo.html": {
@@ -85,9 +86,8 @@ describe("metalsmith-html-minifier", function () {
 			}
 		}, {
 			// This isn't important
-		}, function () {
-			// This isn't important
-		});
+		}, done);
+		expect(done).not.toBeCalledWith(expect.anything());
 
 		var minify = require("html-minifier").minify;
 		expect(minify.mock.calls.length).toBe(1);
@@ -104,6 +104,7 @@ describe("metalsmith-html-minifier", function () {
 			"foo": "bar"
 		};
 		var plugin = htmlMinifier(options);
+		var done = jest.fn();
 
 		plugin({
 			"foo.html": {
@@ -111,9 +112,8 @@ describe("metalsmith-html-minifier", function () {
 			}
 		}, {
 			// This isn't important
-		}, function () {
-			// This isn't important
-		});
+		}, done);
+		expect(done).not.toBeCalledWith(expect.anything());
 
 		var minify = require("html-minifier").minify;
 		expect(minify).toBeCalledWith("a", options);
@@ -137,12 +137,12 @@ describe("metalsmith-html-minifier", function () {
 				"contents": "c",
 			}
 		};
+		var done = jest.fn();
 
 		plugin(files, {
 			// This isn't important
-		}, function () {
-			// This isn't important
-		});
+		}, done);
+		expect(done).not.toBeCalledWith(expect.anything());
 
 		var minify = require("html-minifier").minify;
 		expect(minify.mock.calls.length).toBe(2);
