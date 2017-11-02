@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2.4.4 - 2017-11-02
+
+### Fixed
+
+- File names would not match the base name (e.g. `*.html` would not match `x/y/z.html`) but the whole path ([#27](https://github.com/whymarrh/metalsmith-html-minifier/issues/27), [#28](https://github.com/whymarrh/metalsmith-html-minifier/pull/28))
+
 ## 2.4.3 - 2017-10-02
 
 ### Added
