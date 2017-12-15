@@ -16,7 +16,6 @@
     "test": "test"
   },
   "scripts": {
-    "release": "npm run build && cd build && npm publish",
     "test": "jest && jscs lib __tests__ __mocks__"
   },
   "jest": {
