@@ -9,7 +9,7 @@
     "jest": "^20.0.0",
     "jscs": "^3.0.0"
   },
-  "version": "3.0.0-2",
+  "version": "3.0.0-3",
   "description": "A Metalsmith plugin to minify HTML files.",
   "main": "lib/index.js",
   "directories": {
