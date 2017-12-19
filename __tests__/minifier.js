@@ -15,11 +15,13 @@ describe("metalsmith-html-minifier", function () {
 
 	it("should call minify with each HTML files' contents", function () {
 		var htmlMinifier = require(module);
-		var options = {
+		var minifierOptions = {
 			"foo": "bar",
 			"baz": "qux",
 		};
-		var plugin = htmlMinifier(undefined, options);
+		var plugin = htmlMinifier({
+			minifierOptions,
+		});
 		var files = {
 			"foo.html": {
 				"contents": "a",
@@ -40,17 +42,20 @@ describe("metalsmith-html-minifier", function () {
 
 		var minify = require("html-minifier").minify;
 		expect(minify.mock.calls.length).toBe(2);
-		expect(minify).toBeCalledWith("a", options);
-		expect(minify).toBeCalledWith("b", options);
+		expect(minify).toBeCalledWith("a", minifierOptions);
+		expect(minify).toBeCalledWith("b", minifierOptions);
 	});
 
 	it("should call minify with each HTML and XHTML files' contents (two extensions)", function () {
 		var htmlMinifier = require(module);
-		var options = {
+		var minifierOptions = {
 			"foo": "bar",
 			"baz": "qux",
 		};
-		var plugin = htmlMinifier(["*.html", "*.xhtml"], options);
+		var plugin = htmlMinifier({
+			pattern: ["*.html", "*.xhtml"],
+			minifierOptions,
+		});
 		var files = {
 			"foo.html": {
 				"contents": "a",
@@ -71,8 +76,8 @@ describe("metalsmith-html-minifier", function () {
 
 		var minify = require("html-minifier").minify;
 		expect(minify.mock.calls.length).toBe(2);
-		expect(minify).toBeCalledWith("a", options);
-		expect(minify).toBeCalledWith("b", options);
+		expect(minify).toBeCalledWith("a", minifierOptions);
+		expect(minify).toBeCalledWith("b", minifierOptions);
 	});
 
 	it("should call minify with default options when no options given", function () {
@@ -98,34 +103,15 @@ describe("metalsmith-html-minifier", function () {
 		expect(defaultOptions).not.toEqual({});
 	});
 
-	it("should call minify with options as first argument", function () {
-		var htmlMinifier = require(module);
-		var options = {
-			"foo": "bar"
-		};
-		var plugin = htmlMinifier(options);
-		var done = jest.fn();
-
-		plugin({
-			"foo.html": {
-				"contents": "a",
-			}
-		}, {
-			// This isn't important
-		}, done);
-		expect(done).not.toBeCalledWith(expect.anything());
-
-		var minify = require("html-minifier").minify;
-		expect(minify).toBeCalledWith("a", options);
-	});
-
 	it("should call minify with each HTML files' contents matching the base name", function () {
 		var htmlMinifier = require(module);
-		var options = {
+		var minifierOptions = {
 			"foo": "bar",
 			"baz": "qux",
 		};
-		var plugin = htmlMinifier(undefined, options);
+		var plugin = htmlMinifier({
+			minifierOptions,
+		});
 		var files = {
 			"some/dir/that/exists/foo.html": {
 				"contents": "a",
@@ -146,7 +132,7 @@ describe("metalsmith-html-minifier", function () {
 
 		var minify = require("html-minifier").minify;
 		expect(minify.mock.calls.length).toBe(2);
-		expect(minify).toBeCalledWith("a", options);
-		expect(minify).toBeCalledWith("b", options);
+		expect(minify).toBeCalledWith("a", minifierOptions);
+		expect(minify).toBeCalledWith("b", minifierOptions);
 	});
 });
