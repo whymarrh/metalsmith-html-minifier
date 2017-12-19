@@ -15,7 +15,7 @@ Installation
 The usual:
 
 ```
-$ npm install --save metalsmith-html-minifier
+$ npm install --save metalsmith-html-minifier@2
 ```
 
 How do I use this thing?
