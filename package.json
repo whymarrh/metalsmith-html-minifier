@@ -11,7 +11,7 @@
   },
   "version": "3.0.0-0",
   "description": "A Metalsmith plugin to minify HTML files.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "directories": {
     "test": "test"
   },
