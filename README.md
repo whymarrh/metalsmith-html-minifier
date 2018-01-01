@@ -37,7 +37,9 @@ The above will minify all the HTML files (files ending in `.html`) it processes.
 var Metalsmith   = require("metalsmith");
 var htmlMinifier = require("metalsmith-html-minifier");
 Metalsmith(__dirname)
-    .use(htmlMinifier("*.html"))
+    .use(htmlMinifier({
+        pattern: "**/*.html",
+    }))
     .build();
 ```
 
@@ -47,7 +49,9 @@ You can also pass an array of globs to match filenames:
 var Metalsmith   = require("metalsmith");
 var htmlMinifier = require("metalsmith-html-minifier");
 Metalsmith(__dirname)
-    .use(htmlMinifier(["*.html", "*.xhtml"]))
+    .use(htmlMinifier({
+        pattern: ["**/*.html", "**/*.xhtml"],
+    }))
     .build();
 ```
 
@@ -57,9 +61,11 @@ To pass options to the minifier (to enable or disable optimizations):
 var Metalsmith   = require("metalsmith");
 var htmlMinifier = require("metalsmith-html-minifier");
 Metalsmith(__dirname)
-    .use(htmlMinifier("*.html", {
-        removeComments: false,
-        // etc.
+    .use(htmlMinifier({
+        minifierOptions: {
+            removeComments: false,
+            // etc.
+        },
     }))
     .build();
 ```
@@ -67,7 +73,7 @@ Metalsmith(__dirname)
 Options
 -------
 
-See [Options Quick Reference][2] for a full reference. Suffice it to say that the options passed to the plug-in are merged with the defaults (see below) and passed to the minifier directly.
+See [Options Quick Reference][2] for a full reference. The options passed to the plug-in are merged with the defaults below and passed to the minifier directly.
 
 The following options are enabled by default. **To disable any of these you will need to explicitly set them to `false`.**
 
