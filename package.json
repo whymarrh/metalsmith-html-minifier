@@ -16,7 +16,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jest && jscs lib __tests__ __mocks__"
+    "test": "jest && jscs lib __tests__ __mocks__ && npm audit"
   },
   "jest": {
     "automock": true,
