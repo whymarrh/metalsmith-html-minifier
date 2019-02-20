@@ -6,8 +6,7 @@
     "multimatch": "^2.1.0"
   },
   "devDependencies": {
-    "jest": "^24.1.0",
-    "jscs": "^3.0.0"
+    "jest": "^24.1.0"
   },
   "version": "3.0.0",
   "description": "A Metalsmith plugin to minify HTML files.",
@@ -16,7 +15,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jest && jscs lib __tests__ __mocks__ && npm audit"
+    "test": "jest && npm audit"
   },
   "jest": {
     "automock": true,
