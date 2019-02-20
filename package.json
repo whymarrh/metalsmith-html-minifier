@@ -6,7 +6,7 @@
     "multimatch": "^2.1.0"
   },
   "devDependencies": {
-    "jest": "^20.0.0",
+    "jest": "^24.1.0",
     "jscs": "^3.0.0"
   },
   "version": "3.0.0",
