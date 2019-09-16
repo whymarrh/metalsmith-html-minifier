@@ -1,9 +1,12 @@
 {
   "name": "metalsmith-html-minifier",
+  "engines": {
+    "node": ">=8"
+  },
   "dependencies": {
-    "html-minifier": "^3.0.0",
-    "lodash.defaultsdeep": "^4.1.0",
-    "multimatch": "^2.1.0"
+    "html-minifier": "^4.0.0",
+    "lodash.defaultsdeep": "^4.6.1",
+    "multimatch": "^4.0.0"
   },
   "devDependencies": {
     "jest": "^24.1.0"
