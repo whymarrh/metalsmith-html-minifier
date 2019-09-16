@@ -11,7 +11,7 @@
   "devDependencies": {
     "jest": "^24.1.0"
   },
-  "version": "3.0.3",
+  "version": "4.0.0",
   "description": "A Metalsmith plugin to minify HTML files.",
   "main": "lib/index.js",
   "directories": {
