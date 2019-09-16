@@ -1,4 +1,7 @@
+.gitattributes
 .gitignore
+.jscsrc
+.travis.yml
 npm-debug.log
 __mocks__
 __tests__
