@@ -18,7 +18,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jest && npm audit"
+    "test": "jest"
   },
   "jest": {
     "automock": true,
