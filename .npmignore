@@ -5,6 +5,8 @@
 npm-debug.log
 __mocks__
 __tests__
+package-lock.json
+yarn.lock
 
 # Don't ignore .npmignore files
 !.npmignore
