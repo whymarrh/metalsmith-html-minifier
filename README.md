@@ -15,7 +15,7 @@ Installation
 The usual:
 
 ```
-$ npm install --save metalsmith-html-minifier
+$ yarn add metalsmith-html-minifier
 ```
 
 How do I use this thing?
