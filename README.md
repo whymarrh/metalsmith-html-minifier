@@ -24,8 +24,8 @@ How do I use this thing?
 A quick example:
 
 ```js
-var Metalsmith   = require("metalsmith");
-var htmlMinifier = require("metalsmith-html-minifier");
+const Metalsmith   = require("metalsmith");
+const htmlMinifier = require("metalsmith-html-minifier");
 Metalsmith(__dirname)
     .use(htmlMinifier()) // Use the default options
     .build();
@@ -34,8 +34,8 @@ Metalsmith(__dirname)
 The above will minify all the HTML files (files ending in `.html`) it processes. To provide a custom glob for files to minify:
 
 ```js
-var Metalsmith   = require("metalsmith");
-var htmlMinifier = require("metalsmith-html-minifier");
+const Metalsmith   = require("metalsmith");
+const htmlMinifier = require("metalsmith-html-minifier");
 Metalsmith(__dirname)
     .use(htmlMinifier({
         pattern: "**/*.html",
@@ -46,8 +46,8 @@ Metalsmith(__dirname)
 You can also pass an array of globs to match filenames:
 
 ```js
-var Metalsmith   = require("metalsmith");
-var htmlMinifier = require("metalsmith-html-minifier");
+const Metalsmith   = require("metalsmith");
+const htmlMinifier = require("metalsmith-html-minifier");
 Metalsmith(__dirname)
     .use(htmlMinifier({
         pattern: ["**/*.html", "**/*.xhtml"],
@@ -58,8 +58,8 @@ Metalsmith(__dirname)
 To pass options to the minifier (to enable or disable optimizations):
 
 ```js
-var Metalsmith   = require("metalsmith");
-var htmlMinifier = require("metalsmith-html-minifier");
+const Metalsmith   = require("metalsmith");
+const htmlMinifier = require("metalsmith-html-minifier");
 Metalsmith(__dirname)
     .use(htmlMinifier({
         minifierOptions: {
