@@ -1,7 +1,7 @@
 {
   "name": "metalsmith-html-minifier",
   "engines": {
-    "node": ">=8"
+    "node": ">=10"
   },
   "dependencies": {
     "html-minifier": "^4.0.0",
