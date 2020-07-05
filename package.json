@@ -9,7 +9,7 @@
     "multimatch": "^4.0.0"
   },
   "devDependencies": {
-    "jest": "^25.1.0"
+    "jest": "^26.1.0"
   },
   "version": "4.0.1",
   "description": "A Metalsmith plugin to minify HTML files.",
@@ -19,11 +19,6 @@
   },
   "scripts": {
     "test": "jest"
-  },
-  "jest": {
-    "automock": true,
-    "resetModules": true,
-    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(js)$"
   },
   "repository": {
     "type": "git",
